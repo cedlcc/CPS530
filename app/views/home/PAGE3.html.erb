@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+<!-- You MUST include jQuery before Fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+<style>
+	h1{
+        font-size:5vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 2vw;
+    }
+    h4{
+        font-size: 1.9vw;
+    }
+    div{
+		line-height: 1.5;
+        font-size:1.75vw;
+    }
+	body{
+		margin: 25px;
+	}
+</style>
+
+</head>
+<body style="font-family: Zen Kurenaido; background-color: aliceblue;">
+
+
+
+
+<h1 style="text-align: center;">How to create a web page using Semantic UI and Ruby on Rails</h1><br>
+<div>
+    <h2 style="text-align:center">Semantic UI</h2>
+    <h3 style="text-align:center">Text</h3>
+    <p>
+        Text can be colored or resized using the text class. Note: Only usable within &lt;span&gt; tags
+		<br><br>
+		<h4>Colour</h4>
+			Syntax goes in the format: &lt;span class="ui <i>colour</i> text"&gt<i>The text you want formatted</i>&lt;/span&gt;<br><br>
+			Ex: 
+			<code>
+				This is &lt;span class="ui red text"&gt;red&lt;/span&gt; text and this is &lt;span class="ui blue text"&gt;blue&lt;/span&gt; text 
+				and this is &lt;span class="ui purple text"&gt;purple&lt;/span&gt; text
+			</code>
+		<br><br>
+		The code above has the following output: <br> <br>
+		<div style="font-weight: bold">
+			This is <span class="ui red text">red</span> text and this is <span class="ui blue text">blue</span> 
+			text and this is <span class="ui purple text">purple</span> text
+		</div><br><br>
+		<br>
+		<h4>Size</h4>
+		Syntax goes in the format: &lt;span class="ui <i>size</i> text"&gt;<i>The text you want formatted</i>&lt;/span&gt<br><br>
+		Ex: 
+		<code>
+			This is &lt;span class="ui small text"&gt;small text&lt;/span&gt;<br><br>
+			This is &lt;span class="ui medium text"&gt;medium text&lt;/span&gt;<br><br>
+			This is &lt;span class="ui large text"&gt;large text&lt;/span&gt;<br><br>
+		</code>
+		<br><br>
+		The code above has the following output: <br><br><br>
+		This is <span class="ui small text">small text</span><br><br>
+		This is <span class="ui medium text">medium text</span><br><br>
+		This is <span class="ui large text">large text</span><br><br>
+	</p>
+    <h3 style="text-align: center">Images</h3>
+	There are a wide variety of image class modifications
+	<h4>Size</h4>
+    <p> For example, you can easily edit how big you want your images to be with the size modification. Much like you do with text.<br>
+		Syntax goes in the format: &lt;img class="ui <i>size</i> image" src="<i>picture url or path</i>"&gt;<br><br>
+		Ex: 
+        <code>
+        &lt;img class="ui small image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        <br><br>
+        &lt;img class="ui medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        <br><br>
+        &lt;img class="ui large image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        </code>
+        <br>
+        <br>
+        Here are the respective outputs: <br><br>
+		<div class="ui three column center aligned grid">
+        	<div class="row">
+				<div class="column">
+					<img class="ui small image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				</div>
+				<div class="column">
+					<img class="ui medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				</div>
+				<div class="column">
+					<img class="ui large image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				</div>
+			</div>
+		</div>
+        <br>
+        <br>
+        <h4>Further Image Class Modifications</h4><br><br><br>
+		<div class="ui three column center aligned grid">
+		<div class="row">
+			<div class="column" style="text-align: left;">
+				<i>fluid</i> (takes up the entire container space):<br><br>
+				<img class="ui fluid medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+			<div class="column" style="text-align: left;">
+				<i>rounded</i>: <br><br>
+				<img class="ui rounded medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+			<div class="column" style="text-align: left;">
+				<i>circular</i>: <br><br>
+				<img class="ui circular medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+		</div>
+		</div>
+		For further documentation, visit <a href="https://fomantic-ui.com/introduction/getting-started.html" target="_blank">fomantic-ui.com</a>
+    </p>
+	<h2 style="text-align:center">Ruby on Rails</h2>
+	<h3>MVC Architecture</h3>
+	<p>Rails is made of a Model-View-Control architecture:<br><br>Model is your database<br><br>View is your web page<br><br>Control is the backend code of your web application</p>
+	<h3>Creating your first page</h3>
+	<p>If you go to the <i>Ruby</i> directory you made on the previous page, you'll find a variety of sub-directories. The one we'll be focusing on is the <i>app</i> directory.</p>
+	<p>Creating a web page involes initializing a controller and a view, you can do so by running the following command:<br><br>
+		<code>
+				cd Ruby
+		</code><br><br>
+		This puts you into the directory you made on the previous page, next run:<br><br>
+		<code>
+				rails generate controller home index 
+		</code><br><br>
+	</p>
+	<h3>View</h3>
+	<p>
+		The command above created a new view in the <i>views</i> sub-directory of <i>apps</i>. You can access the view in the <i>app/views/home/index.html.erb</i> file.<br><br>
+		From now on, you can create your webpage in regular html from <i>index.html.erb</i> . You can access it via url using <i>http://localhost:3000/home/index</i>
+	</p>
+	<h3>Demonstration</h3>
+	<p>Let's make an example webpage with Semantic UI and Ruby on Rails <br><br>
+	In your <i>index.html.erb</i> file, let's create a <a href="https://fomantic-ui.com/collections/grid.html" target="_blank">grid</a> that shows <a href="https://fomantic-ui.com/views/card.html" target="_blank">cards</a> of different animals. With Semantic UI, you can organize elements
+	into rows and columns of a specified size. For this example, let's make a grid of 4 columns with centered elements: <br><br>
+	<code>&lt;div class="ui four column center aligned grid"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code><br><br>
+	For each row, we can include 4 elements of class column. In each column we can put an element of Semantic UI class card. The card class 
+	allows you to put images and text in their own good-looking "card" with an image section, and a content section for the title and description. <br><br>
+	
+	<code>
+		&lt;div class="ui card"&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="image"&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://static01.nyt.com/images/2021/10/26/science/21tb-tuskless/21tb-tuskless-videoSixteenByNineJumbo1600.jpg"&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="content"&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header"&gt;African Elephant&lt;/a&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="description"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The African Elephant is the largest land mammal in Africa.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+		&lt;/div&gt;<br>
+	</code>
+	
+	<br><br>For example, here is how the card of an Elephant would look: <br><br>
+	
+	<div class=" ui card">
+        <div class="image">
+            <img src="https://static01.nyt.com/images/2021/10/26/science/21tb-tuskless/21tb-tuskless-videoSixteenByNineJumbo1600.jpg">
+        </div>
+        <div class="content">
+            <a class="header">African Elephant</a>
+            <div class="description">
+            The African Elephant is the largest land mammal in Africa.
+            </div>
+        </div>
+        </div><br><br>
+	After adding a card to each column, this is the following output of the grid:<br><br>
+	</p>
+	<div class="ui four column center aligned grid">
+		<div class="row">
+			<div class="column">
+				<div class=" ui card">
+				<div class="image">
+					<img src="https://static01.nyt.com/images/2021/10/26/science/21tb-tuskless/21tb-tuskless-videoSixteenByNineJumbo1600.jpg">
+				</div>
+				<div class="content">
+					<a class="header">African Elephant</a>
+					<div class="description">
+					The African Elephant is the largest land mammal in Africa.
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="column">
+			<div class="ui card">
+				<div class="image">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Cecil_the_lion_at_Hwange_National_Park_%284516560206%29.jpg">
+				</div>
+				<div class="content">
+					<a class="header">Lion</a>
+					<div class="description">
+					The Lion is the apex predator of the continent.
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="ui card">
+				<div class="image">
+					<img src="https://files.worldwildlife.org/wwfcmsprod/images/Hippos_Hero/story_full_width/1tujlsdjl3_Medium_WW1113453.jpg">
+				</div>
+				<div class="content">
+					<a class="header">Hippopotamus</a>
+					<div class="description">
+					The Hippo is one of world's most dangerous animals.
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="ui card">
+				<div class="image">
+					<img src="https://cdn.mos.cms.futurecdn.net/Z6j2a3pPdyBTQ5iicDe9kn.jpg">
+				</div>
+				<div class="content">
+					<a class="header">Cheetah</a>
+					<div class="description">
+					The Cheetah is the world's fastest land mammal.
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div><br><br>
+	<p>You can add any amount of rows you want to the grid.</p>
+</div>
+<br>
+<br>
+
+
+
+
+</body>
+</html>

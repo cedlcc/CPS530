@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+<!-- You MUST include jQuery before Fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+<style>
+    h1{
+        font-size:5vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 2vw;
+    }
+    h4{
+        font-size: 1.9vw;
+    }
+    div{
+        line-height: 1.5;
+        font-size:1.75vw;
+    }
+</style>
+</head>
+<body style="font-family: Zen Kurenaido; background-color: aliceblue; margin: 25px;">
+<h1 style="text-align: center;">How to install Semantic UI and Ruby on Rails on Windows</h1>
+<div>
+    <h2>Semantic UI</h2>
+    <h3>Step 1: Download the NodeJS Executable</h3>
+    <p>Link to the download can be found on https://nodejs.org/en/</p>
+    <h3>Step 2: Install Gulp</h3>
+    <p>Enter into the command line: <code>npm install gulp-cli -g</code> <br> Next enter: <code>npm install gulp@4.0.0 -D</code></p>
+    <h3>Step 3: Make a project folder in the directory of your choice. Ex: C:\Desktop\my_folder</h3>
+    <p>Don't forget to navigate to said folder using: cd C:\Desktop\my_folder</p>
+    <h3>Step 4: Create your package.json file</h3>
+    <p>Run: <code>npm init</code> in your project directory and press enter until prompted for yes</p>
+    <h3>Step 5: Install Fomantic UI - A community ran fork of Semantic UI</h3>
+    <p>Run: <code>npm install --ignore-scripts fomantic-ui</code><br>
+    Next run: <code>cd node_modules/fomantic-ui</code> <br> Next run: <code>npx gulp install</code> <br>
+    You will then be prompted by Fomantic UI to choose your method of installation, Automatic is the easiest.<br>
+    Finally run: <code>npx gulp build</code></p>
+    <h3>You can now use the Semantic UI framwork<h3>
+    <p>
+        Make sure to include the following code in the header section of your html file: <br><br>
+      	<code style="font-weight: 200;">
+		    &lt;!-- You MUST include jQuery before Fomantic --&gt;<br>
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;<br>
+            &lt;link rel="stylesheet" type="text/css" href="/dist/semantic.min.css"&gt;<br>
+            &lt;script src="/dist/semantic.min.js"&gt;&lt;/script&gt;	
+	    </code>
+    </p>
+    <h3>Alternatively, you can forgo the above steps and use a CDN provider</h3>
+    <p>
+        Simply include the following code in the header section of your html file: <br><br>
+        <code style="font-weight: normal">
+            &lt;!-- You MUST include jQuery before Fomantic --&gt;<br>
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;<br>
+            &lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"&gt;<br>
+            &lt;script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"&gt;&lt;/script&gt;
+        </code>
+    </p>
+    <br>
+    <br>
+    
+</div>
+
+<div>
+    <h2>Ruby on Rails</h2>
+    <h3>Step 1: Install Ruby</h3>
+    <p>Download an installation package from http://rubyinstaller.org/ <br>
+    Make sure ruby is added to your path</p>
+    <h3>Step 2: Install Rails</h3>
+    <p>If you correctly installed Ruby, you should be able to run this command to install Rails: <code>gem install rails</code></p>
+    <h3>Step 3: Using NodeJS and and npm package manager, install Yarn</h3>
+    <p>Run: <code>npm install --global yarn</code></p>
+    <h3>Step 4: Installation Verification</h3>
+    <p>Run: <code>rails new Ruby</code> <br>
+       Run: <code>cd Ruby</code> <br>
+       Run: <code>rails server</code> <br>
+       Now open your browse and type http://localhost:3000 <br>
+       A ruby introduction site will appear meaning you are ready to start developing!</p>
+</div>
+<br>
+<br>
+</body>
+</html>
